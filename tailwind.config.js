@@ -1,10 +1,10 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  content: ["./src/**/*.{html,js}"],
+  content: ["./src/**/*.{html,js,jsx}"],
   theme: {
     extend: {
       backgroundImage:{
-        'hero-bg':"url('./src/images/hero_bg.webp"
+        'hero-bg':"url('/src/images/hero_bg.webp')"
       }
     },
   },
