@@ -148,7 +148,7 @@ const Services = () => {
                   {
                     services.filter(service => service.category === category.name).map(service =>
                       <div key={service._id} className="">
-                        <img src={service.imageUrl} alt=""/>
+                        <img src={service.imageUrl} alt="" className=" w-60 shadow mx-auto"/>
                       </div>
                     )
                   }
