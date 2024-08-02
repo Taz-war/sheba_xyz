@@ -2,12 +2,12 @@ import React from "react";
 
 const HeroSection = () => {
   return (
-    <div className=" flex content-normal items-center bg-hero-bg bg-center bg-no-repeat bg-cover h-[450px] w-full ">
+    <div className=" flex content-normal items-center bg-hero-bg bg-center bg-no-repeat bg-cover h-[450px] w-full bg-black inset-0 opacity-80">
 
-      <div className=" w-full">
+      <div className=" w-full h-full">
 
-        <div className=" text-white text-center ">
-          <h1 className="text-6xl">Your Personal Assistant</h1>
+        <div className=" text-white text-center opacity-100">
+          <h1 className="text-6xl font-bold">Your Personal Assistant</h1>
           <h2 className="text-3xl">
             One stop solution for your services. Oreder my services anytime
           </h2>
