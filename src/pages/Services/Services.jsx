@@ -73,7 +73,7 @@ const Services = () => {
       "_id": "7",
       "category": "AC Repair",
       "details": "Quick and efficient AC installation services for homes and offices.",
-      "imageUrl": "https://s3.ap-south-1.amazonaws.com/cdn-shebaxyz/images/categories_images/thumbs/1712206040_carwashpolish.png",
+      "imageUrl": "https://s3.ap-south-1.amazonaws.com/cdn-shebaxyz/images/categories_images/thumbs/1709643063_acdoctorservice.png",
       "name": "AC Installation"
     },
     {
@@ -87,7 +87,7 @@ const Services = () => {
       "_id": "9",
       "category": "Car Repair",
       "details": "Professional oil change services to keep your car running smoothly.",
-      "imageUrl": "https://s3.ap-south-1.amazonaws.com/cdn-shebaxyz/images/categories_images/thumbs/1712206040_carwashpolish.png",
+      "imageUrl": "https://s3.ap-south-1.amazonaws.com/cdn-shebaxyz/images/categories_images/thumbs/1723522870_carpolishdetailingpackages.jpg",
       "name": "Oil Change"
     },
     {
@@ -133,6 +133,9 @@ const Services = () => {
       "name": "Water Heater Repair"
     }
   ];
+
+
+  
 
   return (
     <div>

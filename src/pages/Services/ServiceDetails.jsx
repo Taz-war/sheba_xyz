@@ -140,6 +140,68 @@ const ServiceDetails = () => {
     },
   ];
 
+  const staffs = [
+    {
+      "_id": "1635416534635",
+      "name": "John Doe",
+      "bio": "An experienced technician specializing in home appliances repair.",
+      "location": "Halishahar, Chittagong",
+      "rate": "6000",
+      "details": "John has 10 years of experience in repairing ACs, TVs, and other home appliances.",
+      "services": [
+        "AC repair",
+        "TV repair",
+        "Refrigerator repair",
+        "Central AC Repair"
+      ],
+      "image": "https://example.com/image1.jpg"
+    },
+    {
+      "_id": "1635416534636",
+      "name": "Jane Smith",
+      "bio": "Specialist in sofa, car, and carpet cleaning.",
+      "location": "Agrabad, Chittagong",
+      "rate": "5000",
+      "details": "Jane has been providing professional cleaning services for over 5 years.",
+      "services": [
+        "Sofa cleaning",
+        "Car cleaning",
+        "Carpet cleaning",
+        "AC cleaning"
+      ],
+      "image": "https://example.com/image2.jpg"
+    },
+    {
+      "_id": "1635416534637",
+      "name": "Michael Johnson",
+      "bio": "Expert in home and office cleaning services.",
+      "location": "Panchlaish, Chittagong",
+      "rate": "4000",
+      "details": "Michael offers specialized cleaning services for homes and offices.",
+      "services": [
+        "AC cleaning",
+        "Sofa cleaning",
+        "Office cleaning",
+        "House cleaning"
+      ],
+      "image": "https://example.com/image3.jpg"
+    },
+    {
+      "_id": "1635416534638",
+      "name": "Emily Davis",
+      "bio": "Experienced technician in repairing and installing electronic appliances.",
+      "location": "Foy’s Lake, Chittagong",
+      "rate": "7000",
+      "details": "Emily is a certified technician with expertise in repairing TVs, washing machines, and microwaves.",
+      "services": [
+        "TV repair",
+        "Washing machine repair",
+        "Microwave repair"
+      ],
+      "image": "https://example.com/image4.jpg"
+    }
+  ]
+
   const service = services.find((service) => service._id === id);
 
   return (
@@ -165,20 +227,10 @@ const ServiceDetails = () => {
 
           <div>
             <h2 className=" font-bold">Service Providers</h2>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde
-              suscipit totam voluptate eveniet odit eligendi placeat dolorum
-              veritatis enim, at repudiandae cumque! Vero aliquam debitis
-              accusantium perferendis dolore, nisi ipsum id. Minima numquam
-              ratione consequatur ut itaque quam quos velit, repudiandae, iusto
-              illum aspernatur illo, delectus enim quae corrupti exercitationem
-              dignissimos ab consequuntur adipisci natus. Maxime facilis iure
-              adipisci cupiditate quo, aut ratione vero nesciunt odit dolorum
-              minima quas accusantium recusandae et a dolorem corrupti eligendi?
-              Odio earum, in nam aperiam laudantium amet! Assumenda facere totam
-              blanditiis dolore illo illum porro soluta ad eveniet sunt?
-              Deserunt eius ipsa quo rerum?
-            </p>
+            {staffs.filter(staff =>staff.services.includes(service.name)).map(staff =>
+              <p>{staff.name}</p>
+            )
+            }
           </div>
         </div>
       </div>
